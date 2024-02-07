@@ -1,0 +1,25 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+:root {
+  --gap10: 10px;
+  --accent-color: #FF0070;
+  --header-description: #000028;
+  --card-text-color: #f1b2ce;
+  --header-footer-title-color: #db00ff;
+  --title-card-color: #ff0070;
+  --color-menu: #FF0070;
+  --text-shadow:#ff0070;
+  --menu-hover-color:rgb(255 0 112  / 0.4);
+  --main-text-family: 'IBM Plex mono', monospace;
+  --header-footer-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-text-size: 18px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --header-footer-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+

@@ -1,0 +1,68 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+  --accent-color: #ff8dcb;
+  --header-description: #353430;
+  --card-text-color: #353430;
+  --header-footer-title-color: #ffc2e6;
+  --text-shadow:#FF8DCB;
+  --title-card-color: #353430;
+  --color-menu: #353430;
+  --menu-hover-color: rgb(50 49 45 / 0.4);
+  background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .header__theme-menu-button_active {
+  border: 1px solid var(--color-menu);
+}
+
+.theme_light .header__theme-menu-button:hover {
+  border:1px solid var(--menu-hover-color); 
+}
+
+.theme_light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--color-menu);
+}
+
+.theme_light .decorated_rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --header-description: #353430;
+    --card-text-color: #353430;
+    --header-footer-title-color: #ffc2e6;
+    --text-shadow:#FF8DCB;
+    --title-card-color: #353430;
+    --menu-hover-color: rgb(50 49 45 / 0.4);
+    --color-menu: #353430;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+  
+  .theme_light .header__theme-menu-button_active {
+    border: 1px solid var(--color-menu);
+  }
+  
+  .theme_light .header__theme-menu-button:hover {
+    border:1px solid var(--menu-hover-color);
+  }
+
+  .theme_light .decorated_rec {
+    display: none;
+  }
+
+  @media (width>=1024) {
+    :root {
+      --text-shadow:#FF0070;
+    }
+  }
+}
